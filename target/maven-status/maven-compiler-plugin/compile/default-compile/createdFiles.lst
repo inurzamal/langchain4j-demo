@@ -1,8 +1,0 @@
-com\nur\tool\OrderTools.class
-com\nur\Langchain4jApplication.class
-com\nur\service\OrderService.class
-com\nur\service\OrderSupportAIAgent.class
-com\nur\repository\OrderRepository.class
-com\nur\controller\AiSupportController.class
-com\nur\service\GeneralAIAgent.class
-com\nur\model\OrderEntity.class

@@ -26,6 +26,8 @@ langchain4j:
     chat-model:
       api-key: ${GEMINI_API_KEY}
       model-name: gemini-3.5-flash-lite
+      return-thinking: true
+      send-thinking: true
       log-requests: true
       log-responses: true
 

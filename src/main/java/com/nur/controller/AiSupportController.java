@@ -1,5 +1,6 @@
 package com.nur.controller;
 
+import com.nur.agents.WorkflowSupportAgent;
 import com.nur.service.GeneralAIAgent;
 import com.nur.service.OrderSupportAIAgent;
 import io.swagger.v3.oas.annotations.Operation;
@@ -17,6 +18,7 @@ public class AiSupportController {
     private final GeneralAIAgent agent;
 
     private final OrderSupportAIAgent orderSupportAIAgent;
+    private final WorkflowSupportAgent workflowSupportAgent;
 
 
     @GetMapping
@@ -31,6 +33,12 @@ public class AiSupportController {
     public String orderSupport(
             @RequestParam String message) {
         return orderSupportAIAgent.chat(message);
+    }
+
+    @GetMapping("/workflow")
+    public String workflowSupport(
+            @RequestParam String request) {
+        return workflowSupportAgent.handle(request);
     }
 
 }

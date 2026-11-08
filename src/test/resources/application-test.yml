@@ -1,0 +1,4 @@
+langchain4j:
+  google-ai-gemini:
+    chat-model:
+      api-key: test-api-key
